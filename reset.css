@@ -1,0 +1,27 @@
+/* CSS Reset & Clear Fix */
+a { text-decoration: none; }
+abbr, acronym{ border-bottom: .1em dotted; cursor: help; }
+body { color: #000; }
+body, fieldset, form, html, legend, li, ol, ul { margin: 0; padding: 0; }
+caption, td, th { text-align: left; vertical-align: top; font-weight: normal; }
+code, pre { font-family: "Courier New", monospace; white-space: pre; } 
+fieldset, img { border: 0; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-family: Arial; margin: 0; padding: 0; }
+input, select, textarea { font-size: 110%; line-height: 1.1; }
+legend { color: #000; }
+li { list-style: none; }
+sub { vertical-align: text-bottom; }
+sup { vertical-align: text-top; }
+table { border-collapse: collapse; border-spacing: 0; }
+.clearfix:after
+{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+* html .clearfix				{ zoom: 1; } /* IE6 */
+*:first-child+html .clearfix	{ zoom: 1; } /* IE7 */
+
